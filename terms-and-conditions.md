@@ -1,5 +1,6 @@
 ---
-layout: page
+layout: single
+classes: wide
 permalink: /terms-and-conditions/
 title: "Terms & Conditions"
 ---

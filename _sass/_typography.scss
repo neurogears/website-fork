@@ -1,0 +1,83 @@
+/*  typography */
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@600&family=Roboto&display=swap');
+
+body {
+  line-height: 1.2;
+  font-family: $primary-font;
+  -webkit-font-smoothing: antialiased;
+  font-size: 15px;
+  color: $text-color;
+}
+
+p, .paragraph {
+  font-weight: 400;
+  color: $text-color;
+  font-size: 18px;
+  line-height: 1.8;
+  font-family: $primary-font;
+  &-lg{
+    font-size: 26px;
+  }
+
+  &-copyright {
+    color: $footer-text-color;
+    font-size: 10px;
+  }
+}
+
+h1,h2,h3,h4,h5,h6 {
+  color: $text-color;
+  font-family: $secondary-font;
+  line-height: 1.4;
+}
+
+h1, .h1{
+  font-size: 60px;
+  @include breakpoint($large) {
+    font-size: 50px;
+  }
+}
+
+h1, .h1color {
+  color: $secondary-color;
+}
+
+h1, .h1black {
+  color: $text-color;
+}
+
+h1, .h1alt {
+  color: $header-text-color;
+}
+
+h2, .h2{
+  font-size: 50px;
+  @include breakpoint($large) {
+    font-size: 40px;
+  }
+}
+
+h2, .h2subtitle {
+  font-size: 28;
+  color: $header-text-color;
+}
+
+h3, .h3{
+  font-size: 40px;
+}
+
+h4, .h4{
+  font-size: 32px;
+}
+
+h5, .h5{
+  font-size: 26px;
+}
+
+h6, .h6{
+  font-size: 20px;
+}
+
+.page__title a {
+  color: $header-text-color;
+}

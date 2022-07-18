@@ -1,5 +1,5 @@
 ---
-layout: splash
+layout: home
 video-gallery:
   - url: http://www.youtube.com/watch?v=mJDV07ptQFk&amp;start=38
     thumbnail: /assets/images/neuro-vr.jpg

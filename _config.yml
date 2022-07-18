@@ -1,19 +1,96 @@
-title: NeuroGEARS
-description: Neuroscience, Games, Interaction, Robotics
-theme: jekyll-theme-cayman
+# Welcome to Jekyll!
+#
+# This config file is meant for settings that affect your whole blog, values
+# which you are expected to set up once and rarely edit after that. If you find
+# yourself editing this file very often, consider using Jekyll's data files
+# feature for the data you need to update frequently.
+#
+# For technical reasons, this file is *NOT* reloaded automatically when you use
+# 'bundle exec jekyll serve'. If you change this file, please restart the server process.
 
+# Site settings
+title: NeuroGEARS
+masthead_title: " "
+logo: assets/images/neurogears.svg
+description: Neuroscience, Games, Interaction, Robotics
+remote_theme: "mmistakes/minimal-mistakes@4.24.0"
 twitter_username: neurogears
 github_username:  neurogears
+minimal_mistakes_skin: neurogears
+search: false
 email: contact@neurogears.org
 copyright: © 2022 NeuroGEARS Ltd.
+location: NeuroGEARS Ltd is a limited company registered in England and Wales. <br/>31 Oval Road, London, NW1 7EA, United Kingdom <br/>Company Registration No. 10773335
 
-plugins:
-  - jekyll-feed
-collections:
-  pages:
-    output: true
-  jobs:
-    output: true
+# Build settings
+markdown: kramdown
+remote_theme: mmistakes/minimal-mistakes
+# Outputting
+permalink: /:categories/:title/
+paginate: 5 # amount of posts to show
+paginate_path: /page:num/
+timezone: # https://en.wikipedia.org/wiki/List_of_tz_database_time_zones
+
+# Analytics
+analytics:
+  provider: custom # false (default), "google", "google-universal", "custom"
+
+include:
+  - _pages
 exclude:
   - Gemfile
   - Gemfile.lock
+  - LICENSE
+  - README
+
+# Plugins (previously gems:)
+plugins:
+  - jekyll-include-cache
+  - jekyll-paginate
+  - jekyll-sitemap
+  - jekyll-gist
+  - jekyll-feed
+  - jemoji
+
+after_footer_scripts:
+  - assets/js/video-gallery.js
+
+footer:
+  logo: assets/images/neurogears-white.svg
+  sections:
+    - label: "Legal"
+      links:
+        - label: "Privacy Policy"
+          url: privacy-policy
+        - label: "Terms and Conditions"
+          url: terms-and-conditions
+  links:
+    - label: "Twitter"
+      icon: "fab fa-fw fa-twitter-square"
+      url: "https://twitter.com/neurogears"
+    - label: "GitHub"
+      icon: "fab fa-fw fa-github"
+      url: "https://github.com/neurogears"
+
+collections:
+  posts:
+    output: true
+    permalink: /:collection/:path/
+  jobs:
+    output: true
+    permalink: /:collection/:path/
+
+defaults:
+  - scope:
+      path: ""
+      type: posts
+    values:
+      layout: single
+      classes: wide
+  - scope:
+      path: ""
+      type: jobs
+    values:
+      layout: single
+      classes: wide
+      author_profile: false

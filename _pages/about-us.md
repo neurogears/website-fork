@@ -1,7 +1,11 @@
 ---
-layout: page
-permalink: /about-us/
+layout: single
+classes: wide
+permalink: /about/
 title: "About Us"
+author_profile: true
+author:
+  avatar: "/assets/images/neurogears-about.svg"
 ---
 
 NeuroGEARS is a creative research group bridging Neuroscience, Games, Interaction, and Robotics. We engage with top research and academic institutions worldwide to reimagine science by using and creating open-source tools which are accessible, understandable and modifiable. Our core mission is to make scientific knowledge available to everyone, and to empower people to follow their curiosity, wherever it may lead.
@@ -37,7 +41,7 @@ Danbee’s current focus is developing a framework for precisely observing nervo
 
 ## Bruno Cruz
 
-![Bruno]({{ site.baseurl }}/assets/images/bcruz-alt.png){:class="img-profile"}
+![Bruno]({{ site.baseurl }}/assets/images/bcruz.jpg){:class="img-profile"}
 
 Bruno (he/him) is a neuroscientist who enjoys tinkering and engineering. As an undergrad, he studied Biochemistry and Molecular & Cellular Neuroscience. Not satisfied with the gap between molecular neuroscience and animal behavior, he moved to Lisbon to pursue a PhD in Systems Neuroscience with Joe Paton. There he studied the role of basal ganglia circuits in the production and suppression of action, and gained experience with animal behavior experiments, neurophysiological recordings, optogenetics, and data analysis. 
 
@@ -45,7 +49,7 @@ While completing his PhD, Bruno also developed an interest for teaching and quic
 
 ## Andrew Erskine
 
-![Andrew]({{ site.baseurl }}/assets/images/aerskine.png){:class="img-profile"}
+![Andrew]({{ site.baseurl }}/assets/images/aerskine.jpg){:class="img-profile"}
 
 Andrew (he/him) is a neuroscientist and software engineer passionate about advancing technologies for research, data science and games. As a PhD student at the Francis Crick Institute he worked on olfactory behaviour in mice, developing the AutonoMouse system for automated, high-throughput behavioural experiments. In his postdoc at the University of Southern California he studied somatosensory processing using head-fixed behaviour, 2-photon imaging, 3D holographic optogenetic stimulation and machine-learning approaches to understand information transfer between cortical layers.
 

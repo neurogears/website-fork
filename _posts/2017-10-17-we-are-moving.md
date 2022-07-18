@@ -1,9 +1,9 @@
 ---
-layout: post
 title: "We are moving"
 date: 2017-10-17 12:00:00 -0000
 categories: news
-image: /assets/images/141107-hereeast.jpg
+header:
+  teaser: /assets/images/141107-hereeast.jpg
 excerpt: We are very happy to announce we are moving into the Plexal technology innovation centre over at Here East, London.
 ---
 

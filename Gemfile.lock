@@ -270,11 +270,12 @@ GEM
       ethon (>= 0.9.0)
     tzinfo (1.2.9)
       thread_safe (~> 0.1)
+    tzinfo-data (1.2022.1)
+      tzinfo (>= 1.0.0)
     unf (0.1.4)
       unf_ext
     unf_ext (0.0.8)
     unicode-display_width (1.8.0)
-    webrick (1.7.0)
     zeitwerk (2.5.4)
 
 PLATFORMS
@@ -285,10 +286,11 @@ DEPENDENCIES
   jekyll
   jekyll-feed
   jekyll-gist
+  jekyll-include-cache
   jekyll-paginate
   jekyll-sitemap
   jemoji
-  webrick (~> 1.7)
+  tzinfo-data
 
 BUNDLED WITH
-   2.2.26
+   2.3.12

@@ -1,0 +1,37 @@
+/* ==========================================================================
+   NeuroGEARS skin
+   ========================================================================== */
+
+$background-color: #e0f1e9 !default;
+$secondary-color: #65bb90 !default;
+$text-color: #525252 !default;
+$header-text-color: #048e66;
+$footer-text-color: #999;
+$masthead-link-color: #000 !default;
+$masthead-link-color-hover: #999 !default;
+$border-color: #c7c7c7 !default;
+$form-background-color: #222222 !default;
+$footer-background-color: $form-background-color !default;
+
+// Font Variables
+$primary-font: "Roboto", sans-serif;
+$secondary-font: "Rubik", sans-serif;
+$icon-font: "themify";
+
+.masthead__menu-item {
+  text-transform: uppercase;
+  font-family: $secondary-font;
+  font-weight: bold;
+}
+
+.masthead, .masthead__inner-wrap, .masthead__menu {
+  background: $background-color;
+}
+
+.masthead .masthead__inner-wrap .masthead__menu .greedy-nav {
+  background: $background-color;
+}
+
+.masthead .masthead__inner-wrap .masthead__menu .greedy-nav .visible-links a::before {
+  height: 0px;
+}

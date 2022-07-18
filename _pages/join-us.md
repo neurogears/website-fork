@@ -1,5 +1,6 @@
 ---
-layout: page
+layout: single
+classes: wide
 permalink: /join-us/
 title: "Join Us"
 ---
@@ -8,7 +9,7 @@ title: "Join Us"
 <div class="job-item">
   <a href="{{ site.baseurl }}{{ job.id }}">
     <span>
-      <h2>{{ job.title }}</h2>
+      <h5>{{ job.title }}</h5>
       <div>
         <ul>
           <li>{{ job.location }}</li>

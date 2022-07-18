@@ -1,0 +1,10 @@
+# main links
+main:
+  - title: "Home"
+    url: /
+  - title: "News"
+    url: /news
+  - title: "Join Us"
+    url: /join-us
+  - title: "About Us"
+    url: /about

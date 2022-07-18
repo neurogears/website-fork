@@ -1,11 +1,11 @@
 ---
-layout: post
 title: "Surprising Minds"
 date: 2017-10-21 12:00:00 -0000
 categories: news
 gallery:
   credit: Photos by Danbee Kim
-image: /assets/images/171013-surprising-minds.jpg
+header:
+  teaser: /assets/images/171013-surprising-minds.jpg
 excerpt: The second phase of this interactive neuroscience exhibit is now running at Sea Life Brighton.
 ---
 
