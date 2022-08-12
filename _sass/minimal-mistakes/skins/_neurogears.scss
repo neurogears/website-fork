@@ -5,6 +5,7 @@
 $background-color: #e0f1e9 !default;
 $secondary-color: #65bb90 !default;
 $text-color: #525252 !default;
+$text-color-alt: #048e66;
 $header-text-color: #048e66;
 $footer-text-color: #999;
 $masthead-link-color: #000 !default;
@@ -12,6 +13,9 @@ $masthead-link-color-hover: #999 !default;
 $border-color: #c7c7c7 !default;
 $form-background-color: #222222 !default;
 $footer-background-color: $form-background-color !default;
+$black: #000;
+$white: #fff;
+$gray: #eaeaea;
 
 // Font Variables
 $primary-font: "Roboto", sans-serif;
@@ -34,4 +38,13 @@ $icon-font: "themify";
 
 .masthead .masthead__inner-wrap .masthead__menu .greedy-nav .visible-links a::before {
   height: 0px;
+}
+
+.active-bg-primary {
+  transition: .3s ease;
+  background: $background-color;
+
+  * {
+    color: $black;
+  }
 }

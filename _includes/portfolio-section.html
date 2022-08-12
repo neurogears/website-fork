@@ -1,0 +1,24 @@
+{% if page.video-gallery %}
+<!-- portfolio -->
+<section class="section">
+  <div class="container">
+    <div class="row">
+      <div class="col-12 text-center">
+        <h2 class="section-title">Portfolio</h2>
+      </div>
+    </div>
+    <div class="row shuffle-wrapper">
+      {% for video in page.video-gallery %}
+      <div class="col-lg-4 col-6 mb-4 shuffle-item">
+        <div class="position-relative rounded hover-wrapper">
+          <a class="video-link" caption="{{ video.caption }}" href="{{ video.url }}">
+            <img class="img-fluid rounded w-100 d-block" src="{{ site.baseurl }}{{ video.thumbnail }}"/>
+          </a>
+        </div>
+      </div>
+      {% endfor %}
+    </div>
+  </div>
+</section>
+<!-- /portfolio -->
+{% endif %}

@@ -1,0 +1,30 @@
+{% if page.services %}
+<!-- services -->
+<section class="section">
+  <div class="container">
+    <div class="row">
+      <div class="col-12 text-center">
+        <h2 class="section-title">{{ page.services-title }}</h2>
+      </div>
+      {% for service in page.services %}
+      <div class="col-md-6 mb-4 mb-md-0">
+        <div class="card hover-shadow shadow">
+          <div
+            class="card-body {% if service.active %}active-bg-primary{% endif %} text-center px-4 py-5"
+          >
+            <img
+              src="{{ service.icon | relative_url }}"
+              class="mb-5 d-inline-block w-50"
+              alt="icon"
+            />
+            <h4 class="mb-4">{{ service.name }}</h4>
+            <p>{{ service.description }}</p>
+          </div>
+        </div>
+      </div>
+      {% endfor %}
+    </div>
+  </div>
+</section>
+<!-- /services -->
+{% endif %}
